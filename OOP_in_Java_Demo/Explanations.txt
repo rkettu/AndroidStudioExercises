@@ -1,0 +1,74 @@
+1. Object
+
+Object is something you build to use a class. With it you can use
+methods (= functions) and attributes (= variables/data) provided
+by the class. You could think of the class as a blueprint and object
+a house you build according to said blueprint.
+
+2. Class
+
+Likewise a class is a collection of methods and attributes. It provides
+the definition by which objects implement their behaviour ie. how they
+work.
+
+3. Instantiation of object (creating an object)
+
+To use the things provided by the class, one needs to create an instance
+(= specific object created from the class). In Java the syntax is generally
+as follows:
+
+	Class objectClass = new Class( );
+				      ^ constructor parameters go here
+
+In Java you need to specifically use the keyword "new" to actually
+instantiate the object
+
+4. Visibility (public / private / protected)
+
+Visibility of member data and methods is controlled by access modifiers.
+
+public means everything can access class data and methods
+private means only the class that defined it can access the data/methods
+protected is like private, but also inheriting classes have access
+
+5. Member datas / methods
+
+Member data = things such as variables/objects, accessible by all methods
+in the class
+Methods = class function
+
+6. Inheritance
+
+Classes can inherit methods and attributes from parent classes. Thus, 
+objects created from child classes have access to methods/data of the
+parent class (if the access modifier permits it). Another important thing
+about inheritance is that child classes can override stuff from the parent
+class.
+
+7. Interface
+
+Interface is basically an empty blueprint that can be used as a base to
+implement a class's functionality. All interface methods are abstract 
+and public by default. All interface attributes are public, static and final
+by default. It CAN'T be instantiated by an object.
+
+8. Polymorphism
+
+Polymorphism is an object's ability to take many forms, for example, when
+a child classes object is being referenced by a parent class. Function
+overriding and function overloading / operator overloading (latter not in Java)
+are also examples of Polymorphism.
+
+9. Overriding
+
+Overriding is an important part of OOP. It means that child classes can have
+their own definitions for functions provided by the parent class.
+In java you should use annotation @Override when overriding.
+
+10. Abstract classes
+
+An abstract class is a class that has support for abstract methods. These 
+methods are unique in the way that they provide no body and it must be 
+defined in the inheriting class. Also, abstract classes CAN'T be instantiated
+by an object - to use even the defined methods you need to create an object 
+instantiated by an inheriting child class.
