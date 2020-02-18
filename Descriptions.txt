@@ -1,0 +1,4 @@
+Couple of Android Studio projects I made in early 2020
+
+The only one I think is notable enough to be worth checking out is the HIIT trainer.
+It implements features such as Custom ArrayAdapters Text-to-Speech and Countdown Timers.
